@@ -1,5 +1,6 @@
 // example
 
+const resultsContainer = document.querySelector('.results');
 const URL = 'https://elephant-api.herokuapp.com/elephants';
 
 // mt proxy server
@@ -13,6 +14,10 @@ async function makeApiCall() {
 
     const elephantsData = await response.json();
     console.log(elephantsData);
-  } catch (e) {}
+    resultsContainer.innerHTML = alert('success', 'successful');
+  } catch (e) {
+    console.log(e);
+    resultsContainer.innerHTML = alert('error', e);
+  }
 }
 makeApiCall();
