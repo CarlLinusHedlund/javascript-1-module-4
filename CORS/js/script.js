@@ -3,7 +3,7 @@
 const resultsContainer = document.querySelector('.results');
 const URL = 'https://elephant-api.herokuapp.com/elephants';
 
-// mt proxy server
+// my proxy server
 const proxy = 'https://noroffcors.herokuapp.com/';
 
 const corsFixUrl = proxy + URL;
